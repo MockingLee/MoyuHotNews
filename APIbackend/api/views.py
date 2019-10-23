@@ -10,7 +10,7 @@ def index(request):
   print(request)
   return HttpResponse('Hey! Server is running.')
 
-@api_view(['GET'])∂
+@api_view(['GET'])
 def getTypeNews(request):
   type = request.GET['type']
   if request.method == 'GET':
