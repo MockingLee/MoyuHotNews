@@ -10,6 +10,8 @@ class News(models.Model):
     # img = models.CharField('img src', max_length=300)
     site_type = models.CharField(max_length=7, blank=True)
     create_time = models.DateTimeField(auto_now=True)
+    rank = models.IntegerField(blank=False)
+    generation = models.IntegerField(blank=False)
 
     def __str__(self):
         return '%s_%s' % (self.site_type, self.title)

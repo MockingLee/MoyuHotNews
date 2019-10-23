@@ -4,5 +4,5 @@ from . import views
 from django.urls import include
 
 urlpatterns = [
-    path('typelist', views.getTypeNews)
+    path('typelist', views.getLastTypeNews)
 ]
