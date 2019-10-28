@@ -85,6 +85,9 @@ DATABASES = {
         'PASSWORD': '123', # 密码
         'HOST': 'db.pkmgtdz.top', # HOST
         'POST': 3306, # 端口
+        'default-character-set': 'utf8',
+        'OPTION': {'init_command': 'SET storage_engine=INNODB;'},
+        'OPTIONS': { 'charset': 'utf8mb4'},
 
     }
 }

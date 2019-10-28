@@ -23,7 +23,8 @@ def getLastTypeNews(request):
   obj = News.objects.filter(site_type=type)
   max_generation = obj.aggregate(Max('generation'))
   # print(getLastTypeNews)
-  obj = obj.filter(generation=max_generation['generation__max']).order_by("-rank")
+
+  obj = obj.filter(generation=max_generation['generation__max']).order_by("rank")
   serializer = NewsSerializer(obj, many=True)
   return JsonResponse({
     'code' : 200,

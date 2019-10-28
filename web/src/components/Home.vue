@@ -5,6 +5,7 @@
     <el-container>
       <el-row>
         <el-button class="select-type-btn" @click="getTypeList('zhihu')">知乎</el-button>
+        <el-button class="select-type-btn" @click="getTypeList('v2ex')">v2ex</el-button>
       </el-row>
     </el-container>
     <el-divider></el-divider>
