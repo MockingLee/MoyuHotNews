@@ -4,5 +4,6 @@ from . import views
 from django.urls import include
 
 urlpatterns = [
-    path('typelist', views.getLastTypeNews)
+    path('typelist', views.getLastTypeNews),
+    path('allsite', views.getType)
 ]
