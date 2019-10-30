@@ -4,9 +4,13 @@ Django Api Server + Vue-cli
 
 ## v1
 
-- hot site catalog api
-- schedule spider site api and save it in db
-- 
+- django backend api (types list)
+- schedule spider
+- vue frontend nginx reverse proxy
+
+## demo
+
+http://hot.pkmgtdz.top/
 
 ## 踩坑
 
